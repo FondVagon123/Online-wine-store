@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Інтернет-магазин вин</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Інтернет-магазин вин</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="btn">Головна</a></li>
+          <li><a href="registration.html" class="btn">Реєстрація</a></li>
+          <li><a href="login.html" class="btn">Авторизація</a></li>
+          <li><a href="contact.html" class="btn">Контакти</a></li>
+          <li><a href="basket.html" class="btn">Кошик</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Вибір найкращих вин</h2>
+        <p>Ласкаво просимо до нашого інтернет-магазину вин, де ви знайдете широкий вибір найкращих вин з усього світу.</p>
+      </div>
+    </section>
+    
+    <section class="featured-products">
+      <div class="container">
+        <h2>Рекомендовані товари</h2>
+        <div class="product">
+          <img src="https://winetime.com.ua/uploads/public/goods/19025/53180408703_6c701cae78_b_502_378.webp" alt="Вино 1">
+          <h3>Вино сухе червоне AF Gross Richebourg Grand Cru 2021 0,75 л</h3>
+          <p class="price">$2030</p>
+          <button class="btn add-to-cart">Додати до кошика</button> <!-- Змінив посилання на кнопку -->
+        </div>
+        <div class="product">
+          <img src="https://winetime.com.ua/uploads/public/goods/19156/53217677770_9b4bfeeb7b_b_502_378.webp" alt="Вино 2">
+          <h3>Вино сухе червоне LDV Massetino 0,75 л</h3>
+          <p class="price">$600</p>
+          <button class="btn add-to-cart">Додати до кошика</button> <!-- Змінив посилання на кнопку -->
+        </div>
+        <div class="product">
+          <img src="https://winetime.com.ua/uploads/public/goods/17817/52722982934_4533731ee8_b_502_378.webp" alt="Вино 3">
+          <h3>Вино напівсухе біле Hugel Riesling Schoelhammer 0,75 л</h3>
+          <p class="price">$255</p>
+          <button class="btn add-to-cart">Додати до кошика</button> <!-- Змінив посилання на кнопку -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Інтернет-магазин вин. Усі права захищено.</p>
+    </div>
+  </footer>
+
+  <div class="language-selector">
+    <label for="language">Виберіть мову:</label>
+    <select id="languageSelector">
+        <option value="uk">Українська</option>
+        <option value="en">English</option>
+    </select>
+  </div>
+  
+  <script src="auth.js"></script> <!-- Підключаємо JavaScript файл -->
+  <script src="language.js"></script> <!-- Підключаємо JavaScript файл для зміни мови -->
+  <script src="user.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
+

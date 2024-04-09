@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик - Інтернет-магазин вин</title>
+    <link rel="stylesheet" href="basket.css"> 
+</head>
+
+<body>
+
+    <header>
+        <h1>Кошик</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="registration.html">Реєстрація</a>
+            <a href="login.html">Авторизація</a>
+            <a href="contact.html">Контакти</a>
+            <a href="basket.html">Кошик</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cart">
+            <h2>Ваш кошик</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Назва</th>
+                        <th>Ціна</th>
+                        <th>Кількість</th>
+                        <th>Загальна вартість</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+                   
+                </tbody>
+            </table>
+            <p id="total">Загальна вартість: 0 грн</p>
+            <button id="clearCart">Очистити кошик</button>
+            <button id="checkout">Оформити замовлення</button> 
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Інтернет-магазин вин. Усі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script> 
+    <script src="user.js"></script>
+
+    <script>
+        
+        const checkoutButton = document.getElementById('checkout');
+
+        
+        checkoutButton.addEventListener('click', function() {
+            
+            window.location.href = 'https://next.privat24.ua'; 
+        });
+    </script>
+</body>
+
+</html>
+

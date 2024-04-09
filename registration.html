@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація - Інтернет-магазин вин</title>
+    <link rel="stylesheet" href="registration.css">
+    <script src="../password.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="texttovoice">Реєстрація</h1>
+    <nav>
+      <a class="btn" href="index.html">Головна</a>
+      <a class="btn" href="register.html">Реєстрація</a>
+      <a class="btn" href="login.html">Авторизація</a>
+      <a class="btn" href="contact.html">Контакти</a>
+      <a class="btn" href="basket.html" >Кошик</a>
+    </nav>
+  </header>
+
+    <main>
+        <section id="registration">
+            <h2>Реєстрація</h2>
+            <form>
+                <label for="reg_username">Ім'я користувача:</label><br>
+                <input type="text" id="reg_username" name="reg_username" required><br>
+                <label for="reg_email">Електронна пошта:</label><br>
+                <input type="email" id="reg_email" name="reg_email" required><br>
+                <label for="reg_password">Пароль:</label><br>
+                <input type="password" id="reg_password" name="reg_password" required><br>
+                <label for="confirm_password">Підтвердити пароль:</label><br>
+                <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+                <button type="button" id="registerButton" class="btn">Зареєструватися</button>
+            </form>
+        </section>
+    </main>
+
+<footer>
+      <div class="container">
+        <p>&copy; 2024 Інтернет-магазин вин. Усі права захищено.</p>
+      </div>
+</footer>
+
+<div class="language-selector">
+  <label for="language">Виберіть мову:</label>
+  <select id="languageSelector">
+      <option value="uk">Українська</option>
+      <option value="en">English</option>
+  </select>
+</div>
+
+<script src="auth.js"></script> 
+<script src="language.js"></script> 
+</body>
+
+</html>
+
